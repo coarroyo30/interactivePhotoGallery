@@ -1,0 +1,97 @@
+/***********
+Search Bar
+***********/
+
+.searchbar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+input[type="search"] {
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 5px;
+  width: 500px;
+  height: 40px;
+}
+
+/***********
+Images
+***********/
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  display: block;
+}
+
+ul li {
+  display: inline-block;
+  
+}
+
+ul li img {
+  display: block;
+  width: 195px;
+  height: 200px;
+  padding: 30px 30px;
+}
+
+/****************
+Overlay
+****************/
+
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center; 
+}
+
+#overlay img {
+ margin-top: 25%; 
+ width: 60%;
+ 
+}
+
+#overlay p {
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding-top: 4em;
+}
+
+/************
+buttons
+************/
+
+#leftArrow, #rightArrow{
+	background: url('../img/bg-slider-arrows.png') no-repeat;
+	background-size: cover;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	margin: 40px 40px 110px 40px;
+  
+	vertical-align: 50%;
+}
+
+#rightArrow{
+	background-position: -75px 0px;
+}
+
+#closeLightbox{
+	background: url('../img/lightbox-close.png') no-repeat;
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+	margin: 20px;
+	float: right;
+}
