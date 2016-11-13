@@ -9,7 +9,7 @@ Search Bar
 
 
 
-input[type="search"] {
+input[type="text"] {
   border-style: solid;
   border-color: lightgrey;
   border-radius: 5px;
@@ -20,10 +20,12 @@ input[type="search"] {
 /***********
 Images
 ***********/
+span {
+  display: none;
+}
 
 ul {
   list-style: none;
-  text-align: center;
   padding-left: 0;
   display: block;
 }
@@ -48,7 +50,7 @@ Overlay
   background:rgba(0,0,0,0.7);
   width:100%;
   height:100%;
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
   display:none;
@@ -56,7 +58,7 @@ Overlay
 }
 
 #overlay img {
- margin-top: 25%; 
+ margin-top: 100px; 
  width: 60%;
  
 }
@@ -72,19 +74,19 @@ Overlay
 buttons
 ************/
 
-#leftArrow, #rightArrow{
-	background: url('../img/bg-slider-arrows.png') no-repeat;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
-	display: inline-block;
-	margin: 40px 40px 110px 40px;
-  
-	vertical-align: 50%;
+
+#leftArrow, #rightArrow {
+  display: inline-block;
+	vertical-align: 80px;
+  padding: 0 20px;
 }
 
-#rightArrow{
-	background-position: -75px 0px;
+#rightArrow a, #leftArrow a {
+  text-decoration: none;
+  color: white;
+  width: 20px;
+	height: 40px;
+  font-size: 30px;
 }
 
 #closeLightbox{
@@ -94,4 +96,31 @@ buttons
 	height: 25px;
 	margin: 20px;
 	float: right;
+}
+
+@media (min-width:600px) {
+  
+  #leftArrow, #rightArrow {
+    vertical-align: 100px;
+  }
+}
+
+@media (min-width:750px) {
+  
+  #leftArrow, #rightArrow {
+    vertical-align: 105px;
+  }
+  
+  #rightArrow a, #leftArrow a {
+  font-size: 60px;
+  }
+  
+}
+
+@media (min-width:1000px) {
+  
+  #leftArrow, #rightArrow {
+    vertical-align: 150px;
+  }
+  
 }
