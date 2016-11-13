@@ -1,8 +1,10 @@
+//this section is for the overlay
+//variables for the image overlay
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
-var $caption = $("<p></p>");
-var $leftArrow = $("<div id='leftArrow'></div>");
-var $rightArrow = $("<div id='rightArrow'></div>");
+var $caption = $("<p class='caption'></p>");
+var $leftArrow = $("<div id='leftArrow'><a href='#'><</a></div>");
+var $rightArrow = $("<div id='rightArrow'><a href='#'>></a></div>");
 var $closeLightbox = $("<div id='closeLightbox'></div><div style='clear:both'></div>");
 
 //An image to overlay
@@ -44,13 +46,13 @@ function getCurrentImage (currentImage) {
   $image.attr("src", imageLocation);
 
   //Get child's alt attribute and set caption
-  var captionText = $(currentImage).children("img").attr("title");
+  var captionText = $(currentImage).children("img").attr("alt");
   $caption.text(captionText);
 }
 
 function getPrevImage() {
   imageParent = $(thisImage).parent().prev();
-  if(imageParent.length!=0){
+  if(imageParent.length!==0){
       thisImage = $(imageParent).children("a");
     // imageLocation = $(thisImage).attr("href");
     // $image.attr("src", imageLocation);
@@ -60,7 +62,7 @@ function getPrevImage() {
 
 function getNextImage() {
   imageParent = $(thisImage).parent().next();
-  if(imageParent.length!=0){
+  if(imageParent.length!==0){
     thisImage = $(imageParent).children("a");
     // imageLocation = $(thisImage).attr("href");
     // $image.attr("src", imageLocation);
