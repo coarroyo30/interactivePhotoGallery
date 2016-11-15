@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Interactive Photo Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!---CSS--->
+    <!--CSS-->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -14,23 +14,22 @@
       <div class="searchbar">
         <input type="text" id="input" name="search" placeholder="Search..." data-search>
       </div>
-        <ul class="images filtr-container">
-          <li class="mix filtr-item" data-category="1" data-sort="value"><a href="img/01.jpg"><img src="img/01.jpg" width="100" alt="Hay Bales. I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a><span>hay bales</span></li>        
-          <li class="mix filtr-item" data-category="2" data-sort="value"><a href="img/02.jpg"><img src="img/02.jpg" width="100" alt="Lake. The lake was so calm today. We had a great view of the snow on the mountains from here."></a><span>lake</span></li>        
-          <li class="mix filtr-item" data-category="3" data-sort="value"><a href="img/03.jpg"><img src="img/03.jpg" width="100" alt="Canyon. I hiked to the top of the mountain and got this picture of the canyon and trees below."></a><span>canyon</span></li>
-          <li class="mix filtr-item" data-category="4" data-sort="value"><a href="img/04.jpg"><img src="img/04.jpg" width="100" alt="Iceberg. It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a><span>iceberg</span></li>
-          <li class="mix filtr-item" data-category="5" data-sort="value"><a href="img/05.jpg"><img src="img/05.jpg" width="100" alt="Desert. The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a><span>desert</span></li>
-          <li class="mix filtr-item" data-category="6" data-sort="value"><a href="img/06.jpg"><img src="img/06.jpg" width="100" alt="Fall. Fall is coming, I love when the leaves on the trees start to change color."></a><span>fall</span></li>
-          <li class="mix filtr-item" data-category="7" data-sort="value"><a href="img/07.jpg"><img src="img/07.jpg" width="100" alt="Plantation. I drove past this plantation yesterday, everything is so green!"></a><span>plantation</span></li>
-          <li class="mix filtr-item" data-category="8" data-sort="value"><a href="img/08.jpg"><img src="img/08.jpg" width="100" alt="Dunes. My summer vacation to the Oregon Coast. I love the sandy dunes!"></a><span>dunes</span></li>
-          <li class="mix filtr-item" data-category="9" data-sort="value"><a href="img/09.jpg"><img src="img/09.jpg" width="100" alt="Countryside Lane. We enjoyed a quiet stroll down this countryside lane."></a><span>countryside lane</span></li>
-          <li class="mix filtr-item" data-category="10" data-sort="value"><a href="img/10.jpg"><img src="img/10.jpg"  width="100" alt="Sunset. Sunset at the coast! The sky turned a lovely shade of orange."></a><span>sunset</span></li>
-          <li class="mix filtr-item" data-category="11" data-sort="value"><a href="img/11.jpg"><img src="img/11.jpg" width="100" alt="Cave. I did a tour of a cave today and the view of the landscape below was breathtaking."></a><span>cave</span></li>
-          <li class="mix filtr-item" data-category="12" data-sort="value"><a href="img/12.jpg"><img src="img/12.jpg" width="100" alt="Bluebells. I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a><span>bluebells</span></li>
+        <ul class="images">
+          <li><a href="img/01.jpg"><img src="img/01.jpg" width="100" alt="Hay Bales. I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a></li>        
+          <li><a href="img/02.jpg"><img src="img/02.jpg" width="100" alt="Lake. The lake was so calm today. We had a great view of the snow on the mountains from here."></a></li>        
+          <li><a href="img/03.jpg"><img src="img/03.jpg" width="100" alt="Canyon. I hiked to the top of the mountain and got this picture of the canyon and trees below."></a></li>
+          <li><a href="img/04.jpg"><img src="img/04.jpg" width="100" alt="Iceberg. It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a></li>
+          <li><a href="img/05.jpg"><img src="img/05.jpg" width="100" alt="Desert. The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a></li>
+          <li><a href="img/06.jpg"><img src="img/06.jpg" width="100" alt="Fall. Fall is coming, I love when the leaves on the trees start to change color."></a></li>
+          <li><a href="img/07.jpg"><img src="img/07.jpg" width="100" alt="Plantation. I drove past this plantation yesterday, everything is so green!"></a></li>
+          <li><a href="img/08.jpg"><img src="img/08.jpg" width="100" alt="Dunes. My summer vacation to the Oregon Coast. I love the sandy dunes!"></a></li>
+          <li><a href="img/09.jpg"><img src="img/09.jpg" width="100" alt="Countryside Lane. We enjoyed a quiet stroll down this countryside lane."></a></li>
+          <li><a href="img/10.jpg"><img src="img/10.jpg"  width="100" alt="Sunset. Sunset at the coast! The sky turned a lovely shade of orange."></a></li>
+          <li><a href="img/11.jpg"><img src="img/11.jpg" width="100" alt="Cave. I did a tour of a cave today and the view of the landscape below was breathtaking."></a></li>
+          <li><a href="img/12.jpg"><img src="img/12.jpg" width="100" alt="Bluebells. I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a></li>
         </ul>
       
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/filterizr/jquery.filterizr.min.js"></script>
 	  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
   </body>
